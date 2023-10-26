@@ -1,0 +1,16 @@
+version: 2
+
+sources: 
+  - name: erp_adventure
+    tables:
+      - name: salesorderdetail
+      - name: salesorderheader
+      - name: creditcard
+      - name: salesorderheadersalesreason
+      - name: salesreason
+      - name: customer
+      - name: person
+      - name: address
+      - name: stateprovince
+      - name: countryregion
+      - name: product

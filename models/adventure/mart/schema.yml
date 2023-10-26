@@ -1,0 +1,46 @@
+version: 2
+
+models:
+    - name: fact_pedido
+      description: "Tabela de fatos"
+      columns:
+          - name: idPedidoDetalhe
+            description: "Chave primária original da tabela"
+            tests:
+                - not_null
+
+    - name: dim_cliente
+      description: "Tabela dimensão"
+      columns:
+          - name: idCliente
+            description: "Chave primaria da tabela"
+            tests:
+                - unique
+                - not_null
+
+    - name: dim_credit_card
+      description: "Tabela dimensão"
+      columns:
+          - name: idCartao
+            description: "Chave primaria da tabela"
+            tests:
+                - unique
+                - not_null
+
+    - name: dim_endereco
+      description: "Tabela dimensão"
+      columns:
+          - name: idEndereco
+            description: "Chave primaria da tabela"
+            tests:
+                - unique
+                - not_null
+
+    - name: dim_motivo
+      description: "Tabela dimensão"
+      columns:
+          - name: idMotivo
+            description: "Chave primaria da tabela"
+            tests:
+                - unique
+                - not_null
